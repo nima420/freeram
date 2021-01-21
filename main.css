@@ -8,11 +8,14 @@
 	--heading-height: 15em;
 }
 
-
+html{
+	min-height: 1300px;
+}
 body {
 	font-family: "Roboto", Arial, sans-serif;
-	min-height:100%;
+	min-height 100vh;;
 	background-image: url("'cb3b47ab.png");
+
 }
 
 header {
@@ -221,7 +224,8 @@ a:link {
 	font-weight: 700;
 	width: 99%;
 	font-size:30px;
-	margin-top: 21%;
+	bottom: -50%;
+
 	text-align: center;
 	padding: 20px;
 	background-color: rgb(255, 174, 0);

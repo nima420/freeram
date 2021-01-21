@@ -11,7 +11,7 @@
 
 body {
 	font-family: "Roboto", Arial, sans-serif;
-	min-height:130vh;
+	min-height:100%;
 	background-image: url("'cb3b47ab.png");
 }
 
@@ -215,15 +215,27 @@ a:link {
 	background-color: transparent;
 	text-decoration: underline;
   }
-  footer {
-	  font-weight: 700;
+.footer {
+	position: absolute;
+	font-weight: 700;
+	width: 99%;
 	font-size:30px;
 	margin-top: 290px;
 	text-align: center;
 	padding: 20px;
 	background-color: rgb(255, 174, 0);
-	color: white;
+	color: rgb(0, 0, 0);
+	border-radius: 100px;
+	border:solid 4.5px rgb(0, 0, 0)
+
   }
+.footer:hover{
+	background-color: rgba(0, 0, 0, 0.5);
+	transform: rotate(10deg);
+	color:rgb(255, 166, 0);
+	border-radius: 100px;
+
+}
 .button1 {
 	
 	text-align: center;

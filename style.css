@@ -1,0 +1,261 @@
+@font-face {
+	font-family: myFirstFont;
+	src: url(AquireBold-8Ma60.otf);
+  }
+.large-header {
+   position: relative;
+   width: 100%;
+   background: #111;
+   overflow: hidden;
+   background-size: cover;
+   background-position: center center;
+   z-index: 1;
+}
+
+.demo .large-header {
+   background-color: #202020;
+}
+
+
+.main-title {
+   position: absolute;
+   margin: 0;
+   padding: 0;
+   color: #F9F1E9;
+   text-align: center;
+   top: 50%;
+   left: 50%;
+   -webkit-transform: translate3d(-50%, -50%, 0);
+   transform: translate3d(-50%, -50%, 0);
+}
+.main-title1 {
+   position: absolute;
+   margin : 0;
+   padding: 0;
+   color: #F9F1E9;
+   text-align: center;
+  
+   top:60%;
+   left: 50%;
+   -webkit-transform: translate3d(-50%, -50%, 0);
+   transform: translate3d(-50%, -50%, 0);
+}
+.bod{
+   color:white;
+}
+
+
+.demo .main-title {
+   text-transform: uppercase;
+   font-size: 4.2em;
+   letter-spacing: 0.1em;
+}
+
+.main-title .thin {
+   font-weight: 200;
+}
+.main-title .thin1 {
+   font-weight: 200;
+   font-size: 30px;
+}
+.main-title1 .thin {
+   font-weight: 200;
+}
+
+@media only screen and (max-width: 768px) {
+   .demo .main-title {
+      font-size: 3em;
+   }
+}
+
+.p {
+   border-right: solid 3px rgba(0,255,0,.75);
+   white-space: nowrap;
+   overflow: hidden;    
+   font-family: 'Source Code Pro', monospace;  
+   font-size: 28px;
+   color: rgba(255,255,255,.70);
+   margin: 0 auto;
+ }
+ 
+ /* Animation */
+ .p {
+   color: #F9F1E9;
+
+   animation: animated-text 1.5s steps(29,end) 1s 1 normal both,
+              animated-cursor 600ms steps(29,end) infinite;
+ }
+ 
+ /* text animation */
+ 
+ @keyframes animated-text{
+   from{width: 0;}
+   to{width: 215px;}
+ }
+ 
+ /* cursor animations */
+ 
+ @keyframes animated-cursor{
+   from{border-right-color: rgba(0,255,0,.75);}
+   to{border-right-color: transparent;}
+ }
+ .center{
+   font-family: 'Source Code Pro', monospace;  
+   color:whitesmoke;
+   text-align: left;
+   margin: auto;
+  width: 75%;
+    
+ }
+ .pad h1{
+   font-family: 'myFirstFont';  
+   color:whitesmoke;
+   text-align: center;
+   font-size: 72px;
+   margin: auto;
+  width: 75%;
+ }
+
+.center1 {
+  color:whitesmoke;
+  text-align: center;
+  margin: auto;
+ width: 75%;
+}
+ .center2{
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   width: 25%;
+   border-radius: 25px;
+ }
+ .card {
+	
+	width: 400px;
+	height: 251px;
+	display: block;
+	margin-top: 30px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.front:hover{
+   
+   transition: all ease-in-out 0.25s;
+	-webkit-filter: blur(4px);
+	filter: blur(4px);
+	
+}
+@media (pointer: none) {
+   .front:active{
+   
+      transition: all ease-in-out 0.25s;
+      -webkit-filter: blur(4px);
+      filter: blur(4px);
+      
+   }
+}
+
+.card .content {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	transform-style: preserve-3d;
+}
+.more {
+	display: none;
+}
+.more:checked ~ .content {
+	transform: rotateY(180deg);
+}
+.front, .back {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	backface-visibility: hidden;
+	transform-style: preserve-3d;
+	border-radius: 36px;
+}
+.front .inner, .back .inner {
+	height: 100%;
+	display: grid;
+	padding: 1.5em;
+	transform: translateZ(80px) scale(0.94);
+}
+.front {
+	
+	background-color: #fff;
+	background-size: cover;
+	background-position: center center;
+}
+.front:after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: block;
+   border-radius: 35px;
+  
+	background: linear-gradient(45deg, rgba(9, 0, 87, 0.699), rgba(237, 255, 234, 0.692));
+	backface-visibility: hidden;
+	
+}
+.front .inner {
+	grid-template-rows: 5fr 1fr 1fr 2fr 1fr;
+	justify-items: center;
+}
+.front h2 {
+	grid-row: 2;
+	margin-bottom: 2.35em;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	color: rgb(255, 255, 255);
+	font-family: myFirstFont;
+	font-size: 45px;
+	text-align: center;
+	font-weight: bold;
+	-webkit-text-stroke-width: 2px;
+	-webkit-text-stroke-color: rgb(0, 0, 0);
+
+}
+
+
+.front .rating i {
+	margin: 0 1px;
+}
+
+
+
+.pad{
+   padding-top: 200px;
+}
+.grid {
+   display: grid;
+  grid-template-columns: auto auto auto;
+  width:90%;
+ 
+
+  margin: 0 auto;
+  
+}
+@media screen and (max-width: 1000px){
+   .grid{
+      display: grid;
+      grid-template-columns: auto;
+
+   }
+}
+
+
+@media screen and (max-width: 1385px)and (min-width:1000px){
+   .grid{
+      display: grid;
+      grid-template-columns: auto auto;
+      width:85%;
+      
+
+   }
+}

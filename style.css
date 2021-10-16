@@ -245,11 +245,12 @@
    .grid{
       display: grid;
       grid-template-columns: auto;
+      
+   }
+   body{
+      zoom: 1.8;
+   }
 
-   }
-body{
-      zoom: 1.1;
-   }
 }
 
 
